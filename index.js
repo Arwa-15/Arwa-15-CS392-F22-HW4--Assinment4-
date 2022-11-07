@@ -32,7 +32,7 @@ app.get('/index', (req,response) =>{
             response.redirect('404');
         }
             result = JSON.parse(body);
-            x = result[10][0];
+            x = result[3][0];
             x = x.substring(30, x.length); 
             //get wikip json
             wikip(x , (err, final) => {
